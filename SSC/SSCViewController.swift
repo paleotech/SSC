@@ -11,28 +11,7 @@ import UIKit
 
 @objc(SSCViewController) class SSCViewController: UITableViewController {
     
-    @IBAction func nextButton(sender: UIButton) {
-        
-    }
-    /*
-    @IBAction func unwindToList(segue: UIStoryboardSegue) {
-        return
-    }
-    
-    @IBAction func unwindToMainMenu(segue: UIStoryboardSegue) {
-        self.performSegueWithIdentifier("goToMainMenu", sender: self)
-    }
-    
-*/
-    @IBAction func unwindFromB(segue: UIStoryboardSegue)
-    {
-        self.performSegueWithIdentifier("goToMainMenu", sender: self)
-        //segue sourceViewController
-        // get whatever data you want to pass back from B
-    }
-    
-    @IBAction func unwindToMain(segue: UIStoryboardSegue) {
-        //self.performSegueWithIdentifier("goToMainMenu", sender: self)
+    @IBAction func unwindToThisViewController(segue: UIStoryboardSegue) {
     }
     
     override func viewDidLoad() {

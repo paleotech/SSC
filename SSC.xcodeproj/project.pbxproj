@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3615402A1B70D15D00089C4A /* SSCCheckbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361540291B70D15D00089C4A /* SSCCheckbox.swift */; };
 		36E8E5F81B6F868800F4820C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E8E5F71B6F868800F4820C /* main.m */; };
 		36E8E5FB1B6F868800F4820C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E8E5FA1B6F868800F4820C /* AppDelegate.m */; };
 		36E8E5FE1B6F868800F4820C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E8E5FD1B6F868800F4820C /* ViewController.m */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		361540291B70D15D00089C4A /* SSCCheckbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSCCheckbox.swift; sourceTree = "<group>"; };
 		36E8E5F21B6F868700F4820C /* SSC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36E8E5F61B6F868800F4820C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36E8E5F71B6F868800F4820C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -65,6 +67,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		361540281B70D12A00089C4A /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				361540291B70D15D00089C4A /* SSCCheckbox.swift */,
+			);
+			name = Controls;
+			sourceTree = "<group>";
+		};
 		36E8E5E91B6F868700F4820C = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +104,7 @@
 				36E8E6021B6F868800F4820C /* Images.xcassets */,
 				36E8E6041B6F868800F4820C /* LaunchScreen.xib */,
 				36E8E61B1B6F949D00F4820C /* View Controllers */,
+				361540281B70D12A00089C4A /* Controls */,
 				36E8E5F51B6F868700F4820C /* Supporting Files */,
 			);
 			path = SSC;
@@ -239,6 +250,7 @@
 				36E8E5FE1B6F868800F4820C /* ViewController.m in Sources */,
 				36E8E61F1B6F999700F4820C /* SSCViewController.swift in Sources */,
 				36E8E5FB1B6F868800F4820C /* AppDelegate.m in Sources */,
+				3615402A1B70D15D00089C4A /* SSCCheckbox.swift in Sources */,
 				36E8E5F81B6F868800F4820C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -436,6 +448,7 @@
 				36E8E6171B6F868800F4820C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		36E8E6181B6F868800F4820C /* Build configuration list for PBXNativeTarget "SSCTests" */ = {
 			isa = XCConfigurationList;
@@ -444,6 +457,7 @@
 				36E8E61A1B6F868800F4820C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
