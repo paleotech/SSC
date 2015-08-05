@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class InductionViewController: UIViewController, UIScrollViewDelegate, UIPopoverPresentationControllerDelegate {
+class SSCInductionViewController: UIViewController, UIScrollViewDelegate, UIPopoverPresentationControllerDelegate {
 
     @IBOutlet var identity: SSCCheckbox!
     @IBOutlet var site: SSCCheckbox!

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3615402A1B70D15D00089C4A /* SSCCheckbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361540291B70D15D00089C4A /* SSCCheckbox.swift */; };
+		365E8E641B7233EF00071DA4 /* SSCIncisionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365E8E631B7233EF00071DA4 /* SSCIncisionViewController.swift */; };
 		36E8E5F81B6F868800F4820C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E8E5F71B6F868800F4820C /* main.m */; };
 		36E8E5FB1B6F868800F4820C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E8E5FA1B6F868800F4820C /* AppDelegate.m */; };
 		36E8E5FE1B6F868800F4820C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E8E5FD1B6F868800F4820C /* ViewController.m */; };
@@ -15,7 +16,7 @@
 		36E8E6031B6F868800F4820C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36E8E6021B6F868800F4820C /* Images.xcassets */; };
 		36E8E6061B6F868800F4820C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36E8E6041B6F868800F4820C /* LaunchScreen.xib */; };
 		36E8E6121B6F868800F4820C /* SSCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E8E6111B6F868800F4820C /* SSCTests.m */; };
-		36E8E61D1B6F950F00F4820C /* InductionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E8E61C1B6F950F00F4820C /* InductionViewController.swift */; };
+		36E8E61D1B6F950F00F4820C /* SSCInductionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E8E61C1B6F950F00F4820C /* SSCInductionViewController.swift */; };
 		36E8E61F1B6F999700F4820C /* SSCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E8E61E1B6F999700F4820C /* SSCViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 
 /* Begin PBXFileReference section */
 		361540291B70D15D00089C4A /* SSCCheckbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSCCheckbox.swift; sourceTree = "<group>"; };
+		365E8E631B7233EF00071DA4 /* SSCIncisionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSCIncisionViewController.swift; sourceTree = "<group>"; };
 		36E8E5F21B6F868700F4820C /* SSC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36E8E5F61B6F868800F4820C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36E8E5F71B6F868800F4820C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -44,7 +46,7 @@
 		36E8E60B1B6F868800F4820C /* SSCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SSCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		36E8E6101B6F868800F4820C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36E8E6111B6F868800F4820C /* SSCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSCTests.m; sourceTree = "<group>"; };
-		36E8E61C1B6F950F00F4820C /* InductionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InductionViewController.swift; sourceTree = "<group>"; };
+		36E8E61C1B6F950F00F4820C /* SSCInductionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSCInductionViewController.swift; sourceTree = "<group>"; };
 		36E8E61E1B6F999700F4820C /* SSCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSCViewController.swift; sourceTree = "<group>"; };
 		36E8E6201B6F9A0500F4820C /* SSCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSCViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -139,7 +141,8 @@
 		36E8E61B1B6F949D00F4820C /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				36E8E61C1B6F950F00F4820C /* InductionViewController.swift */,
+				365E8E631B7233EF00071DA4 /* SSCIncisionViewController.swift */,
+				36E8E61C1B6F950F00F4820C /* SSCInductionViewController.swift */,
 				36E8E6201B6F9A0500F4820C /* SSCViewController.h */,
 				36E8E61E1B6F999700F4820C /* SSCViewController.swift */,
 			);
@@ -246,11 +249,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36E8E61D1B6F950F00F4820C /* InductionViewController.swift in Sources */,
+				36E8E61D1B6F950F00F4820C /* SSCInductionViewController.swift in Sources */,
 				36E8E5FE1B6F868800F4820C /* ViewController.m in Sources */,
 				36E8E61F1B6F999700F4820C /* SSCViewController.swift in Sources */,
 				36E8E5FB1B6F868800F4820C /* AppDelegate.m in Sources */,
 				3615402A1B70D15D00089C4A /* SSCCheckbox.swift in Sources */,
+				365E8E641B7233EF00071DA4 /* SSCIncisionViewController.swift in Sources */,
 				36E8E5F81B6F868800F4820C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
