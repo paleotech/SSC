@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3615402A1B70D15D00089C4A /* SSCCheckbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361540291B70D15D00089C4A /* SSCCheckbox.swift */; };
 		365E8E641B7233EF00071DA4 /* SSCIncisionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365E8E631B7233EF00071DA4 /* SSCIncisionViewController.swift */; };
+		365E8E661B7278C500071DA4 /* SSCSignOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365E8E651B7278C500071DA4 /* SSCSignOutViewController.swift */; };
 		36E8E5F81B6F868800F4820C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E8E5F71B6F868800F4820C /* main.m */; };
 		36E8E5FB1B6F868800F4820C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E8E5FA1B6F868800F4820C /* AppDelegate.m */; };
 		36E8E5FE1B6F868800F4820C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E8E5FD1B6F868800F4820C /* ViewController.m */; };
@@ -33,6 +34,7 @@
 /* Begin PBXFileReference section */
 		361540291B70D15D00089C4A /* SSCCheckbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSCCheckbox.swift; sourceTree = "<group>"; };
 		365E8E631B7233EF00071DA4 /* SSCIncisionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSCIncisionViewController.swift; sourceTree = "<group>"; };
+		365E8E651B7278C500071DA4 /* SSCSignOutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSCSignOutViewController.swift; sourceTree = "<group>"; };
 		36E8E5F21B6F868700F4820C /* SSC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36E8E5F61B6F868800F4820C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36E8E5F71B6F868800F4820C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 				36E8E61C1B6F950F00F4820C /* SSCInductionViewController.swift */,
 				36E8E6201B6F9A0500F4820C /* SSCViewController.h */,
 				36E8E61E1B6F999700F4820C /* SSCViewController.swift */,
+				365E8E651B7278C500071DA4 /* SSCSignOutViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 				36E8E61F1B6F999700F4820C /* SSCViewController.swift in Sources */,
 				36E8E5FB1B6F868800F4820C /* AppDelegate.m in Sources */,
 				3615402A1B70D15D00089C4A /* SSCCheckbox.swift in Sources */,
+				365E8E661B7278C500071DA4 /* SSCSignOutViewController.swift in Sources */,
 				365E8E641B7233EF00071DA4 /* SSCIncisionViewController.swift in Sources */,
 				36E8E5F81B6F868800F4820C /* main.m in Sources */,
 			);
