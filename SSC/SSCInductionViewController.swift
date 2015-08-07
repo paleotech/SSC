@@ -73,7 +73,7 @@ class SSCInductionViewController: UIViewController, UIScrollViewDelegate, UIPopo
             }
             else if (theButton == noKnownAllergy)
             {
-                theKey = "noKnownAllergy"
+                theKey = "noknownallergy"
             }
             else if (theButton == noDifficultAirwayRisk)
             {
