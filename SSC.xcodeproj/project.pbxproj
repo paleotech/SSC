@@ -10,6 +10,8 @@
 		3615402A1B70D15D00089C4A /* SSCCheckbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361540291B70D15D00089C4A /* SSCCheckbox.swift */; };
 		365E8E641B7233EF00071DA4 /* SSCIncisionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365E8E631B7233EF00071DA4 /* SSCIncisionViewController.swift */; };
 		365E8E661B7278C500071DA4 /* SSCSignOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365E8E651B7278C500071DA4 /* SSCSignOutViewController.swift */; };
+		3685943F1B73EC5D00A4A396 /* SSCTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3685943E1B73EC5D00A4A396 /* SSCTableViewCell.swift */; };
+		368594421B74009C00A4A396 /* SSCModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368594411B74009C00A4A396 /* SSCModel.swift */; };
 		36E8E5F81B6F868800F4820C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E8E5F71B6F868800F4820C /* main.m */; };
 		36E8E5FB1B6F868800F4820C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E8E5FA1B6F868800F4820C /* AppDelegate.m */; };
 		36E8E5FE1B6F868800F4820C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E8E5FD1B6F868800F4820C /* ViewController.m */; };
@@ -35,6 +37,8 @@
 		361540291B70D15D00089C4A /* SSCCheckbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSCCheckbox.swift; sourceTree = "<group>"; };
 		365E8E631B7233EF00071DA4 /* SSCIncisionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSCIncisionViewController.swift; sourceTree = "<group>"; };
 		365E8E651B7278C500071DA4 /* SSCSignOutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSCSignOutViewController.swift; sourceTree = "<group>"; };
+		3685943E1B73EC5D00A4A396 /* SSCTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSCTableViewCell.swift; sourceTree = "<group>"; };
+		368594411B74009C00A4A396 /* SSCModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSCModel.swift; sourceTree = "<group>"; };
 		36E8E5F21B6F868700F4820C /* SSC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36E8E5F61B6F868800F4820C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36E8E5F71B6F868800F4820C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -74,9 +78,18 @@
 		361540281B70D12A00089C4A /* Controls */ = {
 			isa = PBXGroup;
 			children = (
+				3685943E1B73EC5D00A4A396 /* SSCTableViewCell.swift */,
 				361540291B70D15D00089C4A /* SSCCheckbox.swift */,
 			);
 			name = Controls;
+			sourceTree = "<group>";
+		};
+		368594401B73F27D00A4A396 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				368594411B74009C00A4A396 /* SSCModel.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		36E8E5E91B6F868700F4820C = {
@@ -108,6 +121,7 @@
 				36E8E6021B6F868800F4820C /* Images.xcassets */,
 				36E8E6041B6F868800F4820C /* LaunchScreen.xib */,
 				36E8E61B1B6F949D00F4820C /* View Controllers */,
+				368594401B73F27D00A4A396 /* Model */,
 				361540281B70D12A00089C4A /* Controls */,
 				36E8E5F51B6F868700F4820C /* Supporting Files */,
 			);
@@ -253,6 +267,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				36E8E61D1B6F950F00F4820C /* SSCInductionViewController.swift in Sources */,
+				368594421B74009C00A4A396 /* SSCModel.swift in Sources */,
+				3685943F1B73EC5D00A4A396 /* SSCTableViewCell.swift in Sources */,
 				36E8E5FE1B6F868800F4820C /* ViewController.m in Sources */,
 				36E8E61F1B6F999700F4820C /* SSCViewController.swift in Sources */,
 				36E8E5FB1B6F868800F4820C /* AppDelegate.m in Sources */,
@@ -387,9 +403,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = SSC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -400,6 +418,7 @@
 				INFOPLIST_FILE = SSC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Release;
 		};

@@ -17,7 +17,7 @@ class SSCInductionViewController: UIViewController, UIScrollViewDelegate, UIPopo
     @IBOutlet var consent: SSCCheckbox!
     @IBOutlet var siteMarked: SSCCheckbox!
     @IBOutlet var markingNotApplicable: SSCCheckbox!
-    @IBOutlet var puiseOx: SSCCheckbox!
+    @IBOutlet var pulseOx: SSCCheckbox!
     @IBOutlet var knownAllergy: SSCCheckbox!
     @IBOutlet var noKnownAllergy: SSCCheckbox!
     @IBOutlet var noDifficultAirwayRisk: SSCCheckbox!
@@ -38,8 +38,68 @@ class SSCInductionViewController: UIViewController, UIScrollViewDelegate, UIPopo
         {
             let theButton = sender as! SSCCheckbox
             theButton.checkBoxTapped()
+            var theKey: String = ""
+            if (theButton == identity)
+            {
+              theKey = "identity"
+            }
+            else if (theButton == site)
+            {
+                theKey = "site"
+            }
+            else if (theButton == surgicalProcedure)
+            {
+                theKey = "procedure"
+            }
+            else if (theButton == consent)
+            {
+                theKey = "consent"
+            }
+            else if (theButton == siteMarked)
+            {
+                theKey = "marked"
+            }
+            else if (theButton == markingNotApplicable)
+            {
+                theKey = "markingNA"
+            }
+            else if (theButton == pulseOx)
+            {
+                theKey = "pulsox"
+            }
+            else if (theButton == knownAllergy)
+            {
+                theKey = "allergy"
+            }
+            else if (theButton == noKnownAllergy)
+            {
+                theKey = "noKnownAllergy"
+            }
+            else if (theButton == noDifficultAirwayRisk)
+            {
+                theKey = "noAirwayRisk"
+            }
+            else if (theButton == difficultAirwayRisk)
+            {
+                theKey = "airwayRisk"
+            }
+            else if (theButton == noBloodLossRisk)
+            {
+                theKey = "noBloodLossRisk"
+            }
+            else if (theButton == bloodLossRisk)
+            {
+                theKey = "bloodlossRisk"
+            }
+            var theVal: Int = 0
+            if (theButton.checked == true)
+            {
+                theVal = 1
+            }
+            SSCModel.sharedInstance.setState(0, key: theKey, value: theVal)
         }
         self.updateDisplay(sender!)
+        
     }
     
     @IBAction func HelpPressed( sender: AnyObject? ) {
