@@ -10,6 +10,11 @@ import Foundation
 import UIKit
 
 class SSCSignOutViewController: UIViewController, UIScrollViewDelegate, UIPopoverPresentationControllerDelegate {
+    @IBOutlet var name: SSCCheckbox!
+    @IBOutlet var instruments: SSCCheckbox!
+    @IBOutlet var specimen: SSCCheckbox!
+    @IBOutlet var equipment: SSCCheckbox!
+    @IBOutlet var concerns: SSCCheckbox!
     @IBOutlet var theScrollView: UIScrollView!
     @IBOutlet var contentView: UIView!
     

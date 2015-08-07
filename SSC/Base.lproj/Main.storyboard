@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cbu-4l-lG0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cbu-4l-lG0">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -31,6 +31,9 @@
                                                 <state key="normal" title="Button" image="CheckboxAlert">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="ButtonPressed:" destination="HQc-rO-Qgs" eventType="touchUpInside" id="Z91-Ih-nzR"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All team members have introduced themselves by name and role" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eqz-Ck-3B1" userLabel="All team members have introduced themselves by name and role">
                                                 <rect key="frame" x="59" y="8" width="521" height="43"/>
@@ -46,6 +49,9 @@
                                                 <state key="normal" title="Button" image="CheckboxAlert">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="ButtonPressed:" destination="HQc-rO-Qgs" eventType="touchUpInside" id="bPl-ch-CH1"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Surgeon, nurse, and anesthesia provider verbally confirm:" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sUa-on-JiQ">
                                                 <rect key="frame" x="16" y="58" width="483" height="22"/>
@@ -61,6 +67,9 @@
                                                 <state key="normal" title="Button" image="CheckboxAlert">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="ButtonPressed:" destination="HQc-rO-Qgs" eventType="touchUpInside" id="3cP-jw-8Di"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not applicable" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wIK-sr-GrW">
                                                 <rect key="frame" x="80" y="538" width="121" height="22"/>
@@ -103,6 +112,9 @@
                                                 <state key="normal" title="Button" image="CheckboxAlert">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="ButtonPressed:" destination="HQc-rO-Qgs" eventType="touchUpInside" id="3DS-NI-gx5"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Anticipated Critical Events" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6LS-WY-UOC">
                                                 <rect key="frame" x="16" y="235" width="222" height="22"/>
@@ -121,6 +133,9 @@
                                                 <state key="normal" title="Button" image="CheckboxAlert">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="ButtonPressed:" destination="HQc-rO-Qgs" eventType="touchUpInside" id="CQc-N5-U7p"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Surgeon reviews critical or unexpected steps, duration, anticpated blood loss" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pg2-u0-G4H">
                                                 <rect key="frame" x="80" y="270" width="500" height="43"/>
@@ -136,6 +151,9 @@
                                                 <state key="normal" title="Button" image="CheckboxAlert">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="ButtonPressed:" destination="HQc-rO-Qgs" eventType="touchUpInside" id="MHc-xb-zdW"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Anesthesia team reviews any patient-specific concerns" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vK6-qI-6pu">
                                                 <rect key="frame" x="80" y="340" width="500" height="22"/>
@@ -151,6 +169,9 @@
                                                 <state key="normal" title="Button" image="CheckboxAlert">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="ButtonPressed:" destination="HQc-rO-Qgs" eventType="touchUpInside" id="8iU-Eo-YyV"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nursing team reviews if sterility (including indicator results) is confirmed, any equipment issues or concerns" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Loy-ei-zQX">
                                                 <rect key="frame" x="80" y="390" width="500" height="43"/>
@@ -172,6 +193,9 @@
                                                 <state key="normal" title="Button" image="CheckboxAlert">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="ButtonPressed:" destination="HQc-rO-Qgs" eventType="touchUpInside" id="RRI-fr-ofe"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sXv-Bi-xuh">
                                                 <rect key="frame" x="80" y="489" width="30" height="22"/>
@@ -187,6 +211,9 @@
                                                 <state key="normal" title="Button" image="CheckboxAlert">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="ButtonPressed:" destination="HQc-rO-Qgs" eventType="touchUpInside" id="NWw-X4-SFd"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is essential imaging displayed?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZCl-vy-cya">
                                                 <rect key="frame" x="16" y="574" width="260" height="22"/>
@@ -202,6 +229,9 @@
                                                 <state key="normal" title="Button" image="CheckboxAlert">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="ButtonPressed:" destination="HQc-rO-Qgs" eventType="touchUpInside" id="U93-YX-ZcH"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qQ7-CX-YoS">
                                                 <rect key="frame" x="80" y="610" width="30" height="22"/>
@@ -217,6 +247,9 @@
                                                 <state key="normal" title="Button" image="CheckboxAlert">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="ButtonPressed:" destination="HQc-rO-Qgs" eventType="touchUpInside" id="vAK-Df-7Kx"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not applicable" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhZ-J6-gj6">
                                                 <rect key="frame" x="80" y="660" width="121" height="22"/>
@@ -333,7 +366,18 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="1000"/>
                     <connections>
+                        <outlet property="anesthesiaReview" destination="GZr-ys-uur" id="wva-KT-Hbf"/>
+                        <outlet property="antibioticGiven" destination="Kcl-lY-88b" id="HvI-5c-pQt"/>
+                        <outlet property="antibioticNA" destination="QJA-K6-mAY" id="dZf-Sk-MiD"/>
                         <outlet property="contentView" destination="AsR-GG-WKX" id="2zB-mJ-Rf0"/>
+                        <outlet property="imagingDisplayed" destination="Ek7-jo-lN2" id="IEl-KV-Yqz"/>
+                        <outlet property="imagingNA" destination="eRV-uS-cA2" id="NNd-Qk-OZx"/>
+                        <outlet property="introduction" destination="qTT-Pk-sJy" id="gu9-h7-EWN"/>
+                        <outlet property="nursingReview" destination="bpc-MH-NlG" id="vup-GX-1eN"/>
+                        <outlet property="patient" destination="K13-7J-hGy" id="9v0-7m-Lck"/>
+                        <outlet property="site" destination="lcA-jI-hni" id="30L-b0-QOO"/>
+                        <outlet property="surgeonReview" destination="7Dx-mM-Jv6" id="HEW-zT-v4O"/>
+                        <outlet property="surgicalProcedure" destination="l6v-1N-Td3" id="erw-Tv-VEA"/>
                         <outlet property="theScrollView" destination="Mqe-A4-ppi" id="8K1-zW-zch"/>
                     </connections>
                 </viewController>
@@ -368,6 +412,9 @@
                                                 <state key="normal" title="Button" image="CheckboxAlert">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="ButtonPressed:" destination="n7Z-Ea-5os" eventType="touchUpInside" id="Ubm-Wj-tnt"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The name of the procedure recorded" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sbI-A9-w0c">
                                                 <rect key="frame" x="85" y="31" width="495" height="22"/>
@@ -383,6 +430,9 @@
                                                 <state key="normal" title="Button" image="CheckboxAlert">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="ButtonPressed:" destination="n7Z-Ea-5os" eventType="touchUpInside" id="Qrr-HS-BjL"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vp8-ns-xjK" customClass="SSCCheckbox" customModule="SSC" customModuleProvider="target">
                                                 <rect key="frame" x="42" y="129" width="35" height="35"/>
@@ -392,6 +442,9 @@
                                                 <state key="normal" title="Button" image="CheckboxAlert">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="ButtonPressed:" destination="n7Z-Ea-5os" eventType="touchUpInside" id="DFb-xF-s9U"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XKm-pc-tLO" customClass="SSCCheckbox" customModule="SSC" customModuleProvider="target">
                                                 <rect key="frame" x="42" y="171" width="35" height="35"/>
@@ -401,6 +454,9 @@
                                                 <state key="normal" title="Button" image="CheckboxAlert">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="ButtonPressed:" destination="n7Z-Ea-5os" eventType="touchUpInside" id="M4M-7I-iw4"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ult-Yj-4A6" customClass="SSCCheckbox" customModule="SSC" customModuleProvider="target">
                                                 <rect key="frame" x="16" y="229" width="35" height="35"/>
@@ -410,6 +466,9 @@
                                                 <state key="normal" title="Button" image="CheckboxAlert">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="ButtonPressed:" destination="n7Z-Ea-5os" eventType="touchUpInside" id="4cv-PT-FQp"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="That instrument, sponge, and needle counts are correct (or not applicable)" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xe1-0g-SbW">
                                                 <rect key="frame" x="85" y="73" width="479" height="43"/>
@@ -522,7 +581,12 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="605"/>
                     <connections>
+                        <outlet property="concerns" destination="Ult-Yj-4A6" id="xua-4A-SVf"/>
                         <outlet property="contentView" destination="inU-30-1Dz" id="lGx-SA-Ry3"/>
+                        <outlet property="equipment" destination="XKm-pc-tLO" id="L1b-JT-jDM"/>
+                        <outlet property="instruments" destination="QyK-YL-IoH" id="6P1-dZ-LCX"/>
+                        <outlet property="name" destination="KQx-6M-RtT" id="wDH-kl-KY7"/>
+                        <outlet property="specimen" destination="vp8-ns-xjK" id="7nS-YY-XQa"/>
                         <outlet property="theScrollView" destination="4yG-32-HiT" id="SN2-6K-Xxm"/>
                     </connections>
                 </viewController>

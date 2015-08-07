@@ -10,8 +10,20 @@ import Foundation
 import UIKit
 
 class SSCIncisionViewController: UIViewController, UIScrollViewDelegate, UIPopoverPresentationControllerDelegate {
-    @IBOutlet var theScrollView: UIScrollView!
+    var theModel = SSCModel()
+    @IBOutlet var introduction: SSCCheckbox!
+    @IBOutlet var patient: SSCCheckbox!
+    @IBOutlet var site: SSCCheckbox!
+    @IBOutlet var surgicalProcedure: SSCCheckbox!
+    @IBOutlet var surgeonReview: SSCCheckbox!
+    @IBOutlet var anesthesiaReview: SSCCheckbox!
+    @IBOutlet var nursingReview: SSCCheckbox!
+    @IBOutlet var antibioticGiven: SSCCheckbox!
+    @IBOutlet var antibioticNA: SSCCheckbox!
+    @IBOutlet var imagingDisplayed: SSCCheckbox!
+    @IBOutlet var imagingNA: SSCCheckbox!
     @IBOutlet var contentView: UIView!
+    @IBOutlet var theScrollView: UIScrollView!
     
     func updateDisplay(textField: AnyObject)
     {
@@ -61,6 +73,7 @@ class SSCIncisionViewController: UIViewController, UIScrollViewDelegate, UIPopov
     
     override func viewWillAppear(animated:Bool) {
         super.viewWillAppear(animated)
+        self.loadCheckboxes()
     }
     
     override func viewWillDisappear(animated: Bool) {
@@ -98,5 +111,16 @@ class SSCIncisionViewController: UIViewController, UIScrollViewDelegate, UIPopov
     {
         scrollView.setContentOffset(CGPointMake(0, scrollView.contentOffset.y), animated:true);
         scrollView.directionalLockEnabled = true;
+    }
+    
+    // MARK: Mange the checkboxes
+    func loadCheckboxes()
+    {
+        var theArray:[Int] = theModel.getArrayValues(0)
+        if (theArray[0] == 1)
+        {
+            introduction.setChecked(true)
+        }
+        
     }
 }

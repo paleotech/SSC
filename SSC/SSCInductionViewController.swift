@@ -65,7 +65,7 @@ class SSCInductionViewController: UIViewController, UIScrollViewDelegate, UIPopo
             }
             else if (theButton == pulseOx)
             {
-                theKey = "pulsox"
+                theKey = "pulseox"
             }
             else if (theButton == knownAllergy)
             {
@@ -135,6 +135,7 @@ class SSCInductionViewController: UIViewController, UIScrollViewDelegate, UIPopo
     
     override func viewWillAppear(animated:Bool) {
         super.viewWillAppear(animated)
+        self.loadCheckboxes()
     }
     
     override func viewWillDisappear(animated: Bool) {
@@ -172,5 +173,64 @@ class SSCInductionViewController: UIViewController, UIScrollViewDelegate, UIPopo
     {
         scrollView.setContentOffset(CGPointMake(0, scrollView.contentOffset.y), animated:true);
         scrollView.directionalLockEnabled = true;
+    }
+    
+    // MARK: Mange the checkboxes
+    func loadCheckboxes()
+    {
+        var theArray:[Int] = SSCModel.sharedInstance.getArrayValues(0)
+        if (theArray[0] == 1)
+        {
+            identity.setChecked(true)
+        }
+        if (theArray[1] == 1)
+        {
+            site.setChecked(true)
+        }
+        if (theArray[2] == 1)
+        {
+            surgicalProcedure.setChecked(true)
+        }
+        if (theArray[3] == 1)
+        {
+            consent.setChecked(true)
+        }
+        if (theArray[4] == 1)
+        {
+            siteMarked.setChecked(true)
+        }
+        if (theArray[5] == 1)
+        {
+            markingNotApplicable.setChecked(true)
+        }
+        if (theArray[6] == 1)
+        {
+            pulseOx.setChecked(true)
+        }
+        if (theArray[7] == 1)
+        {
+            knownAllergy.setChecked(true)
+        }
+        if (theArray[8] == 1)
+        {
+            noKnownAllergy.setChecked(true)
+        }
+        if (theArray[9] == 1)
+        {
+            noDifficultAirwayRisk.setChecked(true)
+        }
+        if (theArray[10] == 1)
+        {
+            difficultAirwayRisk.setChecked(true)
+        }
+        if (theArray[11] == 1)
+        {
+            noBloodLossRisk.setChecked(true)
+        }
+        if (theArray[12] == 1)
+        {
+            bloodLossRisk.setChecked(true)
+        }
+        
     }
 }

@@ -67,7 +67,7 @@ import UIKit
             var theX = CGFloat(i) * tileSize.width
             var thePoint: CGPoint = CGPointMake(theX, 0)
             var modelString = theArray[i]
-            if (modelString == 1)
+            if (modelString > 0)        // FIXME: add logic for yellow caution here
             {
                 greenImage.drawAtPoint(thePoint);
             }
@@ -78,7 +78,7 @@ import UIKit
         }
         let theImage: UIImage = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext();
-        cell.theImage.image = theImage
+        //cell.theImage.image = theImage
         return cell
     }
     
@@ -119,6 +119,10 @@ import UIKit
             UIGraphicsBeginImageContext(imageSize);
             let theCell = cells[i] as! SSCTableViewCell
             var theEnd = 9
+            if (i == 1)
+            {
+                theEnd = 9
+            }
             if (i == 2)
             {
                 theEnd = 5
@@ -128,7 +132,7 @@ import UIKit
                 var theX = CGFloat(j) * tileSize.width
                 var thePoint: CGPoint = CGPointMake(theX, 0)
                 var modelString = theArray[j]
-                if (modelString == 1)
+                if (modelString > 0)   // FIXME: this is where logic for yellow goes
                 {
                     greenImage.drawAtPoint(thePoint);
                 }
