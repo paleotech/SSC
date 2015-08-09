@@ -48,6 +48,12 @@ class SSCCheckbox: UIButton
         self.setImage(image, forState: .Normal)
     }
     
+    func drawNeutral()
+    {
+        let image = UIImage(named: "CheckboxUnchecked") as UIImage!
+        self.setImage(image, forState: .Normal)
+    }
+    
     
     func checkBoxTapped()
     {
@@ -67,7 +73,7 @@ class SSCCheckbox: UIButton
         }
         else
         {
-            self.setImage(UIImage(named: "CheckboxUnchecked"), forState: .Normal)
+            self.setImage(UIImage(named: "CheckboxAlert"), forState: .Normal)
         }
      }
 }

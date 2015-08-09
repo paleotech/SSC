@@ -3,12 +3,12 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "GreenTile.png"
+      "filename" : "YellowTile.png"
     },
     {
       "idiom" : "universal",
       "scale" : "2x",
-      "filename" : "GreenTile@2x.png"
+      "filename" : "YellowTile@2x.png"
     },
     {
       "idiom" : "universal",

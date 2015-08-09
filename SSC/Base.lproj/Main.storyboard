@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cbu-4l-lG0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cbu-4l-lG0">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -23,7 +23,7 @@
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AsR-GG-WKX" userLabel="Content View">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="990"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qTT-Pk-sJy" customClass="SSCCheckbox" customModule="SSC" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qTT-Pk-sJy" customClass="SSCCheckbox" customModule="SSC" customModuleProvider="target">
                                                 <rect key="frame" x="16" y="12" width="35" height="35"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="35" id="l38-7B-F6T"/>
@@ -41,7 +41,7 @@
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lcA-jI-hni" customClass="SSCCheckbox" customModule="SSC" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lcA-jI-hni" customClass="SSCCheckbox" customModule="SSC" customModuleProvider="target">
                                                 <rect key="frame" x="37" y="141" width="35" height="35"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="35" id="V9u-tF-bXq"/>
@@ -59,7 +59,7 @@
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K13-7J-hGy" customClass="SSCCheckbox" customModule="SSC" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K13-7J-hGy" customClass="SSCCheckbox" customModule="SSC" customModuleProvider="target">
                                                 <rect key="frame" x="37" y="91" width="35" height="35"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="35" id="H1J-Bk-YgT"/>
@@ -104,7 +104,7 @@
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l6v-1N-Td3" customClass="SSCCheckbox" customModule="SSC" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l6v-1N-Td3" customClass="SSCCheckbox" customModule="SSC" customModuleProvider="target">
                                                 <rect key="frame" x="37" y="191" width="35" height="35"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="35" id="FbN-wd-SQr"/>
@@ -125,7 +125,7 @@
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Dx-mM-Jv6" customClass="SSCCheckbox" customModule="SSC" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Dx-mM-Jv6" customClass="SSCCheckbox" customModule="SSC" customModuleProvider="target">
                                                 <rect key="frame" x="37" y="273" width="35" height="35"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="35" id="dmH-TP-Oh9"/>
@@ -143,7 +143,7 @@
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GZr-ys-uur" customClass="SSCCheckbox" customModule="SSC" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GZr-ys-uur" customClass="SSCCheckbox" customModule="SSC" customModuleProvider="target">
                                                 <rect key="frame" x="37" y="333" width="35" height="35"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="35" id="nKy-Ho-gWT"/>
@@ -161,7 +161,7 @@
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bpc-MH-NlG" customClass="SSCCheckbox" customModule="SSC" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bpc-MH-NlG" customClass="SSCCheckbox" customModule="SSC" customModuleProvider="target">
                                                 <rect key="frame" x="37" y="393" width="35" height="35"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="35" id="XM4-hH-DXB"/>
@@ -185,7 +185,7 @@
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kcl-lY-88b" customClass="SSCCheckbox" customModule="SSC" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kcl-lY-88b" customClass="SSCCheckbox" customModule="SSC" customModuleProvider="target">
                                                 <rect key="frame" x="37" y="482" width="35" height="35"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="35" id="cay-LT-GtF"/>
@@ -203,7 +203,7 @@
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QJA-K6-mAY" customClass="SSCCheckbox" customModule="SSC" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QJA-K6-mAY" customClass="SSCCheckbox" customModule="SSC" customModuleProvider="target">
                                                 <rect key="frame" x="37" y="531" width="35" height="35"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="35" id="FkQ-ZP-y8b"/>
@@ -221,7 +221,7 @@
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ek7-jo-lN2" customClass="SSCCheckbox" customModule="SSC" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ek7-jo-lN2" customClass="SSCCheckbox" customModule="SSC" customModuleProvider="target">
                                                 <rect key="frame" x="37" y="603" width="35" height="35"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="35" id="j4t-0W-uuF"/>
@@ -239,7 +239,7 @@
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eRV-uS-cA2" customClass="SSCCheckbox" customModule="SSC" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eRV-uS-cA2" customClass="SSCCheckbox" customModule="SSC" customModuleProvider="target">
                                                 <rect key="frame" x="37" y="653" width="35" height="35"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="35" id="ugD-R0-9eH"/>
@@ -404,7 +404,7 @@
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="inU-30-1Dz" userLabel="Content View">
                                         <rect key="frame" x="0.0" y="8" width="600" height="750"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KQx-6M-RtT" customClass="SSCCheckbox" customModule="SSC" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KQx-6M-RtT" customClass="SSCCheckbox" customModule="SSC" customModuleProvider="target">
                                                 <rect key="frame" x="42" y="24" width="35" height="35"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="35" id="44b-E4-zAo"/>
@@ -422,7 +422,7 @@
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QyK-YL-IoH" customClass="SSCCheckbox" customModule="SSC" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QyK-YL-IoH" customClass="SSCCheckbox" customModule="SSC" customModuleProvider="target">
                                                 <rect key="frame" x="42" y="78" width="35" height="35"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="35" id="s0D-rs-mX2"/>
@@ -434,7 +434,7 @@
                                                     <action selector="ButtonPressed:" destination="n7Z-Ea-5os" eventType="touchUpInside" id="Qrr-HS-BjL"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vp8-ns-xjK" customClass="SSCCheckbox" customModule="SSC" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vp8-ns-xjK" customClass="SSCCheckbox" customModule="SSC" customModuleProvider="target">
                                                 <rect key="frame" x="42" y="129" width="35" height="35"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="35" id="Nx2-GC-mcW"/>
@@ -446,7 +446,7 @@
                                                     <action selector="ButtonPressed:" destination="n7Z-Ea-5os" eventType="touchUpInside" id="DFb-xF-s9U"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XKm-pc-tLO" customClass="SSCCheckbox" customModule="SSC" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XKm-pc-tLO" customClass="SSCCheckbox" customModule="SSC" customModuleProvider="target">
                                                 <rect key="frame" x="42" y="171" width="35" height="35"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="35" id="23e-gl-SqT"/>
@@ -458,7 +458,7 @@
                                                     <action selector="ButtonPressed:" destination="n7Z-Ea-5os" eventType="touchUpInside" id="M4M-7I-iw4"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ult-Yj-4A6" customClass="SSCCheckbox" customModule="SSC" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ult-Yj-4A6" customClass="SSCCheckbox" customModule="SSC" customModuleProvider="target">
                                                 <rect key="frame" x="16" y="229" width="35" height="35"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="35" id="G1b-XJ-zqU"/>
@@ -613,7 +613,7 @@
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Xq-XD-BIA" userLabel="Content View">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="775"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IhW-EE-3Fo" customClass="SSCCheckbox" customModule="SSC" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IhW-EE-3Fo" customClass="SSCCheckbox" customModule="SSC" customModuleProvider="target">
                                                 <rect key="frame" x="8" y="8" width="35" height="35"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="35" id="pMb-dW-Zzv"/>
@@ -625,7 +625,7 @@
                                                     <action selector="ButtonPressed:" destination="S7Q-W2-lYv" eventType="touchUpInside" id="aVz-QP-bAk"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TGg-xQ-Ijf" customClass="SSCCheckbox" customModule="SSC" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TGg-xQ-Ijf" customClass="SSCCheckbox" customModule="SSC" customModuleProvider="target">
                                                 <rect key="frame" x="8" y="59" width="35" height="35"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="35" id="yM0-hI-wZj"/>
@@ -637,7 +637,7 @@
                                                     <action selector="ButtonPressed:" destination="S7Q-W2-lYv" eventType="touchUpInside" id="jhL-QZ-Qin"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B5F-ap-gIe" customClass="SSCCheckbox" customModule="SSC" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B5F-ap-gIe" customClass="SSCCheckbox" customModule="SSC" customModuleProvider="target">
                                                 <rect key="frame" x="8" y="108" width="35" height="35"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="35" id="Nuz-Vt-ZBg"/>
@@ -649,7 +649,7 @@
                                                     <action selector="ButtonPressed:" destination="S7Q-W2-lYv" eventType="touchUpInside" id="3ev-Eb-8Lk"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vh5-cR-0yR" customClass="SSCCheckbox" customModule="SSC" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vh5-cR-0yR" customClass="SSCCheckbox" customModule="SSC" customModuleProvider="target">
                                                 <rect key="frame" x="8" y="158" width="35" height="35"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="35" id="obK-s2-CH1"/>
@@ -661,7 +661,7 @@
                                                     <action selector="ButtonPressed:" destination="S7Q-W2-lYv" eventType="touchUpInside" id="bwg-AO-qno"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dyh-GU-iIQ" customClass="SSCCheckbox" customModule="SSC" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dyh-GU-iIQ" customClass="SSCCheckbox" customModule="SSC" customModuleProvider="target">
                                                 <rect key="frame" x="29" y="208" width="35" height="35"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="35" id="9lG-KX-QDW"/>
@@ -673,7 +673,7 @@
                                                     <action selector="ButtonPressed:" destination="S7Q-W2-lYv" eventType="touchUpInside" id="dpB-Qy-5eY"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u5V-Vv-idh" customClass="SSCCheckbox" customModule="SSC" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u5V-Vv-idh" customClass="SSCCheckbox" customModule="SSC" customModuleProvider="target">
                                                 <rect key="frame" x="29" y="258" width="35" height="35"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="35" id="ywB-3k-KFm"/>
@@ -685,7 +685,7 @@
                                                     <action selector="ButtonPressed:" destination="S7Q-W2-lYv" eventType="touchUpInside" id="pGX-ba-H25"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="REG-HZ-ieo" customClass="SSCCheckbox" customModule="SSC" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="REG-HZ-ieo" customClass="SSCCheckbox" customModule="SSC" customModuleProvider="target">
                                                 <rect key="frame" x="8" y="308" width="35" height="35"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="35" id="c94-xz-YaQ"/>
@@ -697,7 +697,7 @@
                                                     <action selector="ButtonPressed:" destination="S7Q-W2-lYv" eventType="touchUpInside" id="2pU-K4-TRY"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3mk-2i-gHe" customClass="SSCCheckbox" customModule="SSC" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3mk-2i-gHe" customClass="SSCCheckbox" customModule="SSC" customModuleProvider="target">
                                                 <rect key="frame" x="29" y="381" width="35" height="35"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="35" id="3Xa-Z0-dP2"/>
@@ -709,7 +709,7 @@
                                                     <action selector="ButtonPressed:" destination="S7Q-W2-lYv" eventType="touchUpInside" id="zcf-9G-ufm"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hEy-Zh-BBS" customClass="SSCCheckbox" customModule="SSC" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hEy-Zh-BBS" customClass="SSCCheckbox" customModule="SSC" customModuleProvider="target">
                                                 <rect key="frame" x="29" y="431" width="35" height="35"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="35" id="Uvt-Sg-mi6"/>
@@ -721,7 +721,7 @@
                                                     <action selector="ButtonPressed:" destination="S7Q-W2-lYv" eventType="touchUpInside" id="FLw-J9-qKC"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n6h-Qa-LmQ" customClass="SSCCheckbox" customModule="SSC" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n6h-Qa-LmQ" customClass="SSCCheckbox" customModule="SSC" customModuleProvider="target">
                                                 <rect key="frame" x="29" y="504" width="35" height="35"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="35" id="G1b-TX-xxs"/>
@@ -733,7 +733,7 @@
                                                     <action selector="ButtonPressed:" destination="S7Q-W2-lYv" eventType="touchUpInside" id="lex-7W-SnU"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JJ1-nQ-mD0" customClass="SSCCheckbox" customModule="SSC" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JJ1-nQ-mD0" customClass="SSCCheckbox" customModule="SSC" customModuleProvider="target">
                                                 <rect key="frame" x="29" y="554" width="35" height="35"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="35" id="WVM-l0-WHQ"/>
@@ -745,7 +745,7 @@
                                                     <action selector="ButtonPressed:" destination="S7Q-W2-lYv" eventType="touchUpInside" id="9jl-RJ-u48"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="olI-iE-S0o" customClass="SSCCheckbox" customModule="SSC" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="olI-iE-S0o" customClass="SSCCheckbox" customModule="SSC" customModuleProvider="target">
                                                 <rect key="frame" x="29" y="630" width="35" height="35"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="35" id="Dcw-Is-c0N"/>
@@ -757,7 +757,7 @@
                                                     <action selector="ButtonPressed:" destination="S7Q-W2-lYv" eventType="touchUpInside" id="U2F-AG-Soo"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2oU-71-vwL" customClass="SSCCheckbox" customModule="SSC" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2oU-71-vwL" customClass="SSCCheckbox" customModule="SSC" customModuleProvider="target">
                                                 <rect key="frame" x="29" y="679" width="35" height="35"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="35" id="0iW-pV-qdu"/>
@@ -1055,15 +1055,15 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IAX-nQ-jva" id="5WI-VC-RCx">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hzj-hH-6VL">
-                                                    <rect key="frame" x="180" y="28" width="135" height="10"/>
-                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oiZ-NN-c0U">
-                                                    <rect key="frame" x="25" y="20" width="157" height="21"/>
+                                                    <rect key="frame" x="25" y="10" width="157" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hzj-hH-6VL">
+                                                    <rect key="frame" x="53" y="39" width="135" height="12"/>
+                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>

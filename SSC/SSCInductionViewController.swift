@@ -38,6 +38,11 @@ class SSCInductionViewController: UIViewController, UIScrollViewDelegate, UIPopo
         {
             let theButton = sender as! SSCCheckbox
             theButton.checkBoxTapped()
+            var theVal: Int = 0
+            if (theButton.checked == true)
+            {
+                theVal = 1
+            }
             var theKey: String = ""
             if (theButton == identity)
             {
@@ -58,10 +63,28 @@ class SSCInductionViewController: UIViewController, UIScrollViewDelegate, UIPopo
             else if (theButton == siteMarked)
             {
                 theKey = "marked"
+                if (theButton.checked == true)
+                {
+                    markingNotApplicable.drawNeutral()
+                    SSCModel.sharedInstance.setState(0, key: "markingNA", value: 0)
+                }
+                else
+                {
+                    markingNotApplicable.drawAlert()
+                }
             }
             else if (theButton == markingNotApplicable)
             {
                 theKey = "markingNA"
+                if ((theButton.checked) == true)
+                {
+                    siteMarked.drawNeutral()
+                    SSCModel.sharedInstance.setState(0, key: "marked", value: 0)
+                }
+                else
+                {
+                    siteMarked.drawAlert()
+                }
             }
             else if (theButton == pulseOx)
             {
@@ -70,31 +93,80 @@ class SSCInductionViewController: UIViewController, UIScrollViewDelegate, UIPopo
             else if (theButton == knownAllergy)
             {
                 theKey = "allergy"
+                if (theButton.checked == true)
+                {
+                    noKnownAllergy.drawNeutral()
+                    SSCModel.sharedInstance.setState(0, key: "noknownallergy", value: 0)
+                }
+                else
+                {
+                    noKnownAllergy.drawAlert()
+                }
             }
             else if (theButton == noKnownAllergy)
             {
                 theKey = "noknownallergy"
+                if (theButton.checked == true)
+                {
+                    knownAllergy.drawNeutral()
+                    SSCModel.sharedInstance.setState(0, key: "knownallergy", value: 0)
+                }
+                else
+                {
+                    knownAllergy.drawAlert()
+                }
             }
             else if (theButton == noDifficultAirwayRisk)
             {
                 theKey = "noAirwayRisk"
+                if (theButton.checked == true)
+                {
+                    difficultAirwayRisk.drawNeutral()
+                    SSCModel.sharedInstance.setState(0, key: "airwayRisk", value: 0)
+                }
+                else
+                {
+                    difficultAirwayRisk.drawAlert()
+                }
             }
             else if (theButton == difficultAirwayRisk)
             {
                 theKey = "airwayRisk"
+                if (theButton.checked == true)
+                {
+                    noDifficultAirwayRisk.drawNeutral()
+                    SSCModel.sharedInstance.setState(0, key: "noAirwayRisk", value: 0)
+                }
+                else
+                {
+                    noDifficultAirwayRisk.drawAlert()
+                }
             }
             else if (theButton == noBloodLossRisk)
             {
                 theKey = "noBloodLossRisk"
+                if (theButton.checked == true)
+                {
+                    bloodLossRisk.drawNeutral()
+                    SSCModel.sharedInstance.setState(0, key: "bloodLossRisk", value: 0)
+                }
+                else
+                {
+                    bloodLossRisk.drawAlert()
+                }
             }
             else if (theButton == bloodLossRisk)
             {
                 theKey = "bloodlossRisk"
-            }
-            var theVal: Int = 0
-            if (theButton.checked == true)
-            {
-                theVal = 1
+                if (theButton.checked == true)
+                {
+                    noBloodLossRisk.drawNeutral()
+                    SSCModel.sharedInstance.setState(0, key: "noBloodLossRisk", value: 0)
+                }
+                else
+                {
+                    noBloodLossRisk.drawAlert()
+                }
             }
             SSCModel.sharedInstance.setState(0, key: theKey, value: theVal)
         }
