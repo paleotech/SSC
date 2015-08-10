@@ -140,31 +140,31 @@ import UIKit
                     theCell.risk1.text = ""
                     theCell.risk2.text = ""
                     theCell.risk3.text = ""
-                    if (theArray[7] > 0)
+                    if (theArray[7] > 1)
                     {
                         theCell.risk1.text = "Allergy"
-                        if (theArray[8] > 0)
+                        if (theArray[8] > 1)
                         {
                             theCell.risk2.text = "Airway"
-                            if (theArray[9] > 0)
+                            if (theArray[9] > 1)
                             {
                                 theCell.risk3.text = "Bloodloss"
                             }
                         }
-                        else if (theArray[9] > 0)
+                        else if (theArray[9] > 1)
                         {
                             theCell.risk2.text = "Bloodloss"
                         }
                     }
-                    else if (theArray[8] > 0)
+                    else if (theArray[8] > 1)
                     {
                         theCell.risk1.text = "Airway"
-                        if (theArray[9] > 0)
+                        if (theArray[9] > 1)
                         {
                             theCell.risk2.text = "Bloodloss"
                         }
                     }
-                    else if (theArray[9] > 0)
+                    else if (theArray[9] > 1)
                     {
                         theCell.risk1.text = "Bloodloss"
                     }
