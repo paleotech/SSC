@@ -185,4 +185,24 @@ import UIKit
         theModel.clearState()
         self.displayTiles()
     }
+    
+    // MARK: The following methods support the help popover
+    @IBAction func popover(sender: AnyObject) {
+        self.performSegueWithIdentifier("showHelp", sender: self)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+    {
+        
+        if segue.identifier == "showHelp"
+        {
+            var vc = segue.destinationViewController as! SSCHelpViewController
+            vc.showContent("about")
+        }
+    }
+    
+    func adaptivePresentationStyleForPresentationController(controller: UIPresentationController) -> UIModalPresentationStyle
+    {
+        return .None
+    }
 }

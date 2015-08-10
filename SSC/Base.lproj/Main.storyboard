@@ -1191,7 +1191,16 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="Surgical Safety Checklist Home" id="WsD-0t-tgC" userLabel="Surgical Safety Checklist Home"/>
+                    <navigationItem key="navigationItem" title="Surgical Safety Checklist Home" id="WsD-0t-tgC" userLabel="Surgical Safety Checklist Home">
+                        <barButtonItem key="rightBarButtonItem" title="Info" id="JhG-VP-6uG">
+                            <connections>
+                                <action selector="popover:" destination="7oa-Lb-Uq3" id="fce-B5-VrX"/>
+                                <segue destination="v9M-Nw-67f" kind="popoverPresentation" identifier="showHelp" popoverAnchorBarButtonItem="JhG-VP-6uG" id="jyw-cf-YHb">
+                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                </segue>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="600"/>
                     <connections>
@@ -1341,8 +1350,8 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eIQ-wU-Tbb">
-                                <rect key="frame" x="38" y="60" width="524" height="550"/>
+                            <webView clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eIQ-wU-Tbb">
+                                <rect key="frame" x="38" y="60" width="524" height="556"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </webView>
                         </subviews>
@@ -1355,14 +1364,16 @@
                             <constraint firstItem="5fR-hK-Vdn" firstAttribute="top" secondItem="f2n-5e-L5b" secondAttribute="bottom" constant="-21" id="Hs5-SY-q7O"/>
                             <constraint firstItem="eIQ-wU-Tbb" firstAttribute="centerX" secondItem="QHu-Fq-ddi" secondAttribute="centerX" id="VZa-Vs-g0Q"/>
                             <constraint firstItem="eIQ-wU-Tbb" firstAttribute="top" secondItem="f2n-5e-L5b" secondAttribute="bottom" constant="40" id="ZPs-rS-zSu"/>
-                            <constraint firstItem="Ekb-nK-QGN" firstAttribute="top" secondItem="eIQ-wU-Tbb" secondAttribute="bottom" constant="-54" id="drB-LK-cpV"/>
+                            <constraint firstItem="Ekb-nK-QGN" firstAttribute="top" secondItem="eIQ-wU-Tbb" secondAttribute="bottom" constant="-60" id="drB-LK-cpV"/>
                             <constraint firstItem="5fR-hK-Vdn" firstAttribute="leading" secondItem="QHu-Fq-ddi" secondAttribute="leadingMargin" constant="-16" id="hzK-mr-79B"/>
                             <constraint firstItem="eIQ-wU-Tbb" firstAttribute="leading" secondItem="QHu-Fq-ddi" secondAttribute="leadingMargin" constant="22" id="u8y-E6-Ded"/>
+                            <constraint firstItem="eIQ-wU-Tbb" firstAttribute="top" secondItem="f2n-5e-L5b" secondAttribute="bottom" constant="40" id="xlV-Rb-ddI"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="Hs5-SY-q7O"/>
                                 <exclude reference="hzK-mr-79B"/>
+                                <exclude reference="Ad5-dF-JmN"/>
                                 <exclude reference="ZPs-rS-zSu"/>
                                 <exclude reference="FIm-nL-J5t"/>
                             </mask>
@@ -1371,6 +1382,11 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Title" id="Tjr-uD-C24"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="600"/>
+                    <connections>
+                        <outlet property="theTitle" destination="sgZ-ZV-x7a" id="RCk-ja-8Du"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rgq-YM-Urb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1381,6 +1397,6 @@
         <image name="CheckboxAlert" width="35" height="35"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="beQ-xC-0r9"/>
+        <segue reference="jyw-cf-YHb"/>
     </inferredMetricsTieBreakers>
 </document>

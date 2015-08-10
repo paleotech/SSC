@@ -12,6 +12,7 @@ import UIKit
 class SSCHelpViewController: UIViewController, UIPopoverPresentationControllerDelegate {
     
     @IBOutlet var theWebView: UIWebView!
+    @IBOutlet var theTitle: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,5 +36,11 @@ class SSCHelpViewController: UIViewController, UIPopoverPresentationControllerDe
         theWebView = UIWebView(frame: CGRectMake(0, 60, self.view.bounds.width, self.view.bounds.height))
         theWebView.loadRequest(theRequest);
         self.view.addSubview(theWebView)
+        
+        // set the title
+        if (theString == "about")
+        {
+            theTitle.text = "SSC Manual: About"
+        }
     }
 }
