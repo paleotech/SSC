@@ -14,6 +14,7 @@
 		368210851B77F8C600ECF096 /* incisionHelp.html in Resources */ = {isa = PBXBuildFile; fileRef = 368210841B77F8C600ECF096 /* incisionHelp.html */; };
 		368210881B78C21300ECF096 /* inductionHelp.html in Resources */ = {isa = PBXBuildFile; fileRef = 368210861B78C21300ECF096 /* inductionHelp.html */; };
 		368210891B78C21300ECF096 /* signOutHelp.html in Resources */ = {isa = PBXBuildFile; fileRef = 368210871B78C21300ECF096 /* signOutHelp.html */; };
+		3682108B1B79066300ECF096 /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = 3682108A1B79066300ECF096 /* about.html */; };
 		3685943F1B73EC5D00A4A396 /* SSCTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3685943E1B73EC5D00A4A396 /* SSCTableViewCell.swift */; };
 		368594421B74009C00A4A396 /* SSCModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368594411B74009C00A4A396 /* SSCModel.swift */; };
 		36E8E5F81B6F868800F4820C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E8E5F71B6F868800F4820C /* main.m */; };
@@ -45,6 +46,7 @@
 		368210841B77F8C600ECF096 /* incisionHelp.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = incisionHelp.html; sourceTree = "<group>"; };
 		368210861B78C21300ECF096 /* inductionHelp.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = inductionHelp.html; sourceTree = "<group>"; };
 		368210871B78C21300ECF096 /* signOutHelp.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = signOutHelp.html; sourceTree = "<group>"; };
+		3682108A1B79066300ECF096 /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = about.html; sourceTree = "<group>"; };
 		3685943E1B73EC5D00A4A396 /* SSCTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSCTableViewCell.swift; sourceTree = "<group>"; };
 		368594411B74009C00A4A396 /* SSCModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSCModel.swift; sourceTree = "<group>"; };
 		36E8E5F21B6F868700F4820C /* SSC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSC.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,6 +97,7 @@
 		368210831B77F89300ECF096 /* HelpFiles */ = {
 			isa = PBXGroup;
 			children = (
+				3682108A1B79066300ECF096 /* about.html */,
 				368210861B78C21300ECF096 /* inductionHelp.html */,
 				368210871B78C21300ECF096 /* signOutHelp.html */,
 				368210841B77F8C600ECF096 /* incisionHelp.html */,
@@ -270,6 +273,7 @@
 				368210851B77F8C600ECF096 /* incisionHelp.html in Resources */,
 				36E8E6061B6F868800F4820C /* LaunchScreen.xib in Resources */,
 				368210891B78C21300ECF096 /* signOutHelp.html in Resources */,
+				3682108B1B79066300ECF096 /* about.html in Resources */,
 				368210881B78C21300ECF096 /* inductionHelp.html in Resources */,
 				36E8E6031B6F868800F4820C /* Images.xcassets in Resources */,
 			);
