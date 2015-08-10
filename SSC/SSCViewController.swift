@@ -57,7 +57,6 @@ import UIKit
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        println("You selected cell #\(indexPath.row)!")
         if (indexPath.row == 0)
         {
             performSegueWithIdentifier("Induction", sender: self)
@@ -123,6 +122,61 @@ import UIKit
             let theImage: UIImage = UIGraphicsGetImageFromCurrentImageContext()
             UIGraphicsEndImageContext();
             theCell.theImage.image = theImage
+            
+            // Now the risk factor text
+            if (i == 0)
+            {
+                var riskCount = 0
+                if ( (theArray[7] == 0) && (theArray[8] == 0) && (theArray[9] == 0) )
+                {
+                    theCell.riskFactors.text = ""
+                    theCell.risk1.text = ""
+                    theCell.risk2.text = ""
+                    theCell.risk3.text = ""
+                }
+                else
+                {
+                    theCell.riskFactors.text = "Risk Factors: "
+                    theCell.risk1.text = ""
+                    theCell.risk2.text = ""
+                    theCell.risk3.text = ""
+                    if (theArray[7] > 0)
+                    {
+                        theCell.risk1.text = "Allergy"
+                        if (theArray[8] > 0)
+                        {
+                            theCell.risk2.text = "Airway"
+                            if (theArray[9] > 0)
+                            {
+                                theCell.risk3.text = "Bloodloss"
+                            }
+                        }
+                        else if (theArray[9] > 0)
+                        {
+                            theCell.risk2.text = "Bloodloss"
+                        }
+                    }
+                    else if (theArray[8] > 0)
+                    {
+                        theCell.risk1.text = "Airway"
+                        if (theArray[9] > 0)
+                        {
+                            theCell.risk2.text = "Bloodloss"
+                        }
+                    }
+                    else if (theArray[9] > 0)
+                    {
+                        theCell.risk1.text = "Bloodloss"
+                    }
+                }
+            }
+            else
+            {
+                theCell.riskFactors.text = ""
+                theCell.risk1.text = ""
+                theCell.risk2.text = ""
+                theCell.risk3.text = ""
+            }
         }
     }
     
