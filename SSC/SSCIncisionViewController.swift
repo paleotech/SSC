@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 class SSCIncisionViewController: UIViewController, UIScrollViewDelegate, UIPopoverPresentationControllerDelegate {
-    var theModel = SSCModel()
+    
     @IBOutlet var introduction: SSCCheckbox!
     @IBOutlet var patient: SSCCheckbox!
     @IBOutlet var site: SSCCheckbox!
@@ -25,18 +25,99 @@ class SSCIncisionViewController: UIViewController, UIScrollViewDelegate, UIPopov
     @IBOutlet var contentView: UIView!
     @IBOutlet var theScrollView: UIScrollView!
     
-    func updateDisplay(textField: AnyObject)
-    {
-
-    }
-    
     @IBAction func ButtonPressed( sender: AnyObject? ) {
         if (sender is SSCCheckbox)
         {
             let theButton = sender as! SSCCheckbox
             theButton.checkBoxTapped()
+            var theVal: Int = 0
+            if (theButton.checked == true)
+            {
+                theVal = 1
+            }
+            var theKey: String = ""
+            if (theButton == introduction)
+            {
+                theKey = "intro"
+            }
+            else if (theButton == patient)
+            {
+                theKey = "patient"
+            }
+            else if (theButton == site)
+            {
+                theKey = "site"
+            }
+            else if (theButton == surgicalProcedure)
+            {
+                theKey = "procedure"
+            }
+            else if (theButton == surgeonReview)
+            {
+                theKey = "surgeonreview"
+            }
+            else if (theButton == anesthesiaReview)
+            {
+                theKey = "anesthesiareview"
+            }
+            else if (theButton == nursingReview)
+            {
+                theKey = "nursingreview"
+            }
+            else if (theButton == antibioticGiven)
+            {
+                theKey = "antibiotics"
+                if (theButton.checked == true)
+                {
+                    antibioticNA.drawNeutral()
+                    SSCModel.sharedInstance.setState(1, key: "antibioticsNA", value: 0)
+                }
+                else
+                {
+                    antibioticNA.drawAlert()
+                }
+            }
+            else if (theButton == antibioticNA)
+            {
+                theKey = "antibioticsNA"
+                if (theButton.checked == true)
+                {
+                    antibioticGiven.drawNeutral()
+                    SSCModel.sharedInstance.setState(1, key: "antibiotics", value: 0)
+                }
+                else
+                {
+                    antibioticGiven.drawAlert()
+                }
+            }
+            else if (theButton == imagingDisplayed)
+            {
+                theKey = "imaging"
+                if (theButton.checked == true)
+                {
+                    imagingNA.drawNeutral()
+                    SSCModel.sharedInstance.setState(1, key: "imagingNA", value: 0)
+                }
+                else
+                {
+                    imagingNA.drawAlert()
+                }
+            }
+            else if (theButton == imagingNA)
+            {
+                theKey = "imagingNA"
+                if (theButton.checked == true)
+                {
+                    imagingDisplayed.drawNeutral()
+                    SSCModel.sharedInstance.setState(1, key: "imaging", value: 0)
+                }
+                else
+                {
+                    imagingDisplayed.drawAlert()
+                }
+            }
+            SSCModel.sharedInstance.setState(1, key: theKey, value: theVal)
         }
-        self.updateDisplay(sender!)
     }
     
     @IBAction func HelpPressed( sender: AnyObject? ) {
@@ -96,8 +177,8 @@ class SSCIncisionViewController: UIViewController, UIScrollViewDelegate, UIPopov
         
         if segue.identifier == "showHelp"
         {
-            //vc = segue.destinationViewController as! HelpViewController
-            //vc.showContent("basic")
+            var vc = segue.destinationViewController as! SSCHelpViewController
+            vc.showContent("incisionHelp")
         }
     }
     
@@ -116,11 +197,50 @@ class SSCIncisionViewController: UIViewController, UIScrollViewDelegate, UIPopov
     // MARK: Mange the checkboxes
     func loadCheckboxes()
     {
-        var theArray:[Int] = theModel.getArrayValues(0)
+        var theArray:[Int] = SSCModel.sharedInstance.getArrayValues(1)
         if (theArray[0] == 1)
         {
             introduction.setChecked(true)
         }
-        
+        if (theArray[1] == 1)
+        {
+            patient.setChecked(true)
+        }
+        if (theArray[2] == 1)
+        {
+            site.setChecked(true)
+        }
+        if (theArray[3] == 1)
+        {
+            surgicalProcedure.setChecked(true)
+        }
+        if (theArray[4] == 1)
+        {
+            surgeonReview.setChecked(true)
+        }
+        if (theArray[5] == 1)
+        {
+            anesthesiaReview.setChecked(true)
+        }
+        if (theArray[6] == 1)
+        {
+            nursingReview.setChecked(true)
+        }
+        if (theArray[7] == 1)
+        {
+            antibioticGiven.setChecked(true)
+        }
+        if (theArray[8] == 1)
+        {
+            antibioticNA.setChecked(true)
+        }
+        if (theArray[9] == 1)
+        {
+            imagingDisplayed.setChecked(true)
+        }
+        if (theArray[10] == 1)
+        {
+            imagingNA.setChecked(true)
+        }
     }
 }

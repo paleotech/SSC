@@ -18,26 +18,39 @@ class SSCSignOutViewController: UIViewController, UIScrollViewDelegate, UIPopove
     @IBOutlet var theScrollView: UIScrollView!
     @IBOutlet var contentView: UIView!
     
-    func updateDisplay(textField: AnyObject)
-    {
-
-    }
-    
     @IBAction func ButtonPressed( sender: AnyObject? ) {
         if (sender is SSCCheckbox)
         {
             let theButton = sender as! SSCCheckbox
             theButton.checkBoxTapped()
+            var theVal: Int = 0
+            if (theButton.checked == true)
+            {
+                theVal = 1
+            }
+            var theKey: String = ""
+            if (theButton == name)
+            {
+                theKey = "name"
+            }
+            else if (theButton == instruments)
+            {
+                theKey = "instruments"
+            }
+            else if (theButton == specimen)
+            {
+                theKey = "specimen"
+            }
+            else if (theButton == equipment)
+            {
+                theKey = "equipment"
+            }
+            else if (theButton == concerns)
+            {
+                theKey = "concerns"
+            }
+            SSCModel.sharedInstance.setState(2, key: theKey, value: theVal)
         }
-        self.updateDisplay(sender!)
-    }
-    
-    @IBAction func HelpPressed( sender: AnyObject? ) {
-
-    }
-    
-    @IBAction func ClearPressed( sender: AnyObject? ) {
-
     }
     
     override func viewDidLoad() {
@@ -66,6 +79,7 @@ class SSCSignOutViewController: UIViewController, UIScrollViewDelegate, UIPopove
     
     override func viewWillAppear(animated:Bool) {
         super.viewWillAppear(animated)
+        self.loadCheckboxes()
     }
     
     override func viewWillDisappear(animated: Bool) {
@@ -88,8 +102,8 @@ class SSCSignOutViewController: UIViewController, UIScrollViewDelegate, UIPopove
         
         if segue.identifier == "showHelp"
         {
-            //vc = segue.destinationViewController as! HelpViewController
-            //vc.showContent("basic")
+            var vc = segue.destinationViewController as! SSCHelpViewController
+            vc.showContent("signOutHelp")
         }
     }
     
@@ -103,5 +117,31 @@ class SSCSignOutViewController: UIViewController, UIScrollViewDelegate, UIPopove
     {
         scrollView.setContentOffset(CGPointMake(0, scrollView.contentOffset.y), animated:true);
         scrollView.directionalLockEnabled = true;
+    }
+    
+    // MARK: Mange the checkboxes
+    func loadCheckboxes()
+    {
+        var theArray:[Int] = SSCModel.sharedInstance.getArrayValues(2)
+        if (theArray[0] == 1)
+        {
+            name.setChecked(true)
+        }
+        if (theArray[1] == 1)
+        {
+            instruments.setChecked(true)
+        }
+        if (theArray[2] == 1)
+        {
+            specimen.setChecked(true)
+        }
+        if (theArray[3] == 1)
+        {
+            equipment.setChecked(true)
+        }
+        if (theArray[4] == 1)
+        {
+            concerns.setChecked(true)
+        }
     }
 }

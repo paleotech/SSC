@@ -34,6 +34,10 @@ import UIKit
         self.displayTiles()
     }
     
+    @IBAction func unwindToHome(segue: UIStoryboardSegue)
+    {
+    }
+    
     // MARK: table view functions
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
@@ -53,7 +57,7 @@ import UIKit
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        //println("You selected cell #\(indexPath.row)!")
+        println("You selected cell #\(indexPath.row)!")
         if (indexPath.row == 0)
         {
             performSegueWithIdentifier("Induction", sender: self)
@@ -89,7 +93,7 @@ import UIKit
             var theArray = theModel.getState(i)
             UIGraphicsBeginImageContext(imageSize);
             let theCell = cells[i] as! SSCTableViewCell
-            var theEnd = 9
+            var theEnd = 10
             if (i == 1)
             {
                 theEnd = 9
@@ -120,5 +124,11 @@ import UIKit
             UIGraphicsEndImageContext();
             theCell.theImage.image = theImage
         }
+    }
+    
+    // MARK: interactive controls, limited to the reset button here
+    @IBAction func ButtonPressed( sender: AnyObject? ) {
+        theModel.clearState()
+        self.displayTiles()
     }
 }

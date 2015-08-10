@@ -23,8 +23,8 @@ class SSCModel {
     
     init()
     {
-        theDictionaries.induction = ["identity": 0, "site": 0, "procedure": 0, "consent": 0, "marked": 0, "markingNA": 0, "pulseox": 0, "allergy": 0, "noknownallergy": 0, "noAirwayRisk": 0, "airwayRisk": 0, "noBloodLossRisk": 0, "bloodlossRisk": 0]
-        theDictionaries.incision = ["intro": 1, "patient": 1, "site": 0, "procedure": 0, "surgeonreview": 0, "anesthesiareview": 0, "nursingreview": 0, "antibiotics": 0, "antibioticsNA": 0, "imaging": 0, "imagingNA" :0]
+        theDictionaries.induction = ["identity": 0, "site": 0, "procedure": 0, "consent": 0, "marked": 0, "markingNA": 0, "safetycheck": 0, "pulseox": 0, "allergy": 0, "noknownallergy": 0, "noAirwayRisk": 0, "airwayRisk": 0, "noBloodLossRisk": 0, "bloodlossRisk": 0, "safetycheck": 0]
+        theDictionaries.incision = ["intro": 0, "patient": 0, "site": 0, "procedure": 0, "surgeonreview": 0, "anesthesiareview": 0, "nursingreview": 0, "antibiotics": 0, "antibioticsNA": 0, "imaging": 0, "imagingNA" :0]
         theDictionaries.signOut = ["name": 0, "instruments": 0, "specimen": 0, "equipment": 0, "concerns": 0]
     }
     
@@ -48,10 +48,10 @@ class SSCModel {
     {
         if (screen == 0)
         {
-            var theArray:[Int] = [0,0,0,0,0,0,0,0,0,0,0,0,0]
-            var theStrings: [String] = ["identity", "site", "procedure", "consent", "marked", "markingNA", "pulseox", "allergy", "noknownallergy", "noAirwayRisk", "airwayRisk", "noBloodLossRisk", "bloodlossRisk"]
-            // The first four are trivial
-            for var i = 0; i < 13; i++
+            var theArray:[Int] = [0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+            var theStrings: [String] = ["identity", "site", "procedure", "consent", "marked", "markingNA", "safetycheck", "pulseox", "allergy", "noknownallergy", "noAirwayRisk", "airwayRisk", "noBloodLossRisk", "bloodlossRisk"]
+            // This array just returns the values, so no translation is required
+            for var i = 0; i < 14; i++
             {
                 var theKey: String = theStrings[i]
                 theArray[i] = theDictionaries.induction.valueForKey(theKey) as! Int
@@ -88,7 +88,7 @@ class SSCModel {
         if (screen == 0)
         {
             var theArray:[Int] = [0,0,0,0,0,0,0,0,0,0,0,0,0]
-            var theStrings: [String] = ["identity", "site", "procedure", "consent", "marked", "markingNA", "pulseox", "allergy", "noknownallergy", "noAirwayRisk", "airwayRisk", "noBloodLossRisk", "bloodlossRisk"]
+            var theStrings: [String] = ["identity", "site", "procedure", "consent", "marked", "markingNA", "safetycheck", "pulseox", "allergy", "noknownallergy", "noAirwayRisk", "airwayRisk", "noBloodLossRisk", "bloodlossRisk"]
             // The first four are trivial
             for var i = 0; i < 4; i++
             {
@@ -102,40 +102,45 @@ class SSCModel {
             {
                 theArray[4] = 1;
             }
+            var safetyCheck: Int = theDictionaries.induction.valueForKey("safetycheck") as! Int
+            if (safetyCheck == 1)
+            {
+                theArray[5] = 1;
+            }
             var pulseOx: Int = theDictionaries.induction.valueForKey("pulseox") as! Int
             if (pulseOx == 1)
             {
-                theArray[5] = 1;
+                theArray[6] = 1;
             }
             var allergy: Int = theDictionaries.induction.valueForKey("allergy") as! Int
             var noknownallergy: Int = theDictionaries.induction.valueForKey("noknownallergy") as! Int
             if (allergy == 1)
             {
-                theArray[6] = 2;
+                theArray[7] = 2;
             }
             else if (noknownallergy == 1)
             {
-                theArray[6] = 1;
+                theArray[7] = 1;
             }
             var noairwayrisk: Int = theDictionaries.induction.valueForKey("noAirwayRisk") as! Int
             var airwayrisk: Int = theDictionaries.induction.valueForKey("airwayRisk") as! Int
             if (airwayrisk == 1)
             {
-                theArray[7] = 2;
+                theArray[8] = 2;
             }
             else if (noairwayrisk == 1)
             {
-                theArray[7] = 1;
+                theArray[8] = 1;
             }
             var nobloodlossrisk: Int = theDictionaries.induction.valueForKey("noBloodLossRisk") as! Int
             var bloodlossrisk: Int = theDictionaries.induction.valueForKey("bloodlossRisk") as! Int
             if (bloodlossrisk == 1)
             {
-                theArray[8] = 2;
+                theArray[9] = 2;
             }
             else if (nobloodlossrisk == 1)
             {
-                theArray[8] = 1;
+                theArray[9] = 1;
             }
             
             return theArray
@@ -174,6 +179,12 @@ class SSCModel {
             }
             return theArray
         }
-        
+    }
+    
+    func clearState()
+    {
+        theDictionaries.induction = ["identity": 0, "site": 0, "procedure": 0, "consent": 0, "marked": 0, "markingNA": 0, "safetycheck": 0, "pulseox": 0, "allergy": 0, "noknownallergy": 0, "noAirwayRisk": 0, "airwayRisk": 0, "noBloodLossRisk": 0, "bloodlossRisk": 0, "safetycheck": 0]
+        theDictionaries.incision = ["intro": 0, "patient": 0, "site": 0, "procedure": 0, "surgeonreview": 0, "anesthesiareview": 0, "nursingreview": 0, "antibiotics": 0, "antibioticsNA": 0, "imaging": 0, "imagingNA" :0]
+        theDictionaries.signOut = ["name": 0, "instruments": 0, "specimen": 0, "equipment": 0, "concerns": 0]
     }
 }

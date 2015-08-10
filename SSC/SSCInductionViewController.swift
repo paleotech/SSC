@@ -17,6 +17,7 @@ class SSCInductionViewController: UIViewController, UIScrollViewDelegate, UIPopo
     @IBOutlet var consent: SSCCheckbox!
     @IBOutlet var siteMarked: SSCCheckbox!
     @IBOutlet var markingNotApplicable: SSCCheckbox!
+    @IBOutlet var safetyCheck: SSCCheckbox!
     @IBOutlet var pulseOx: SSCCheckbox!
     @IBOutlet var knownAllergy: SSCCheckbox!
     @IBOutlet var noKnownAllergy: SSCCheckbox!
@@ -27,12 +28,7 @@ class SSCInductionViewController: UIViewController, UIScrollViewDelegate, UIPopo
     @IBOutlet var contentView: UIView!
     @IBOutlet var theScrollView: UIScrollView!
 
-    
-    func updateDisplay(textField: AnyObject)
-    {
-
-    }
-    
+  
     @IBAction func ButtonPressed( sender: AnyObject? ) {
         if (sender is SSCCheckbox)
         {
@@ -86,6 +82,10 @@ class SSCInductionViewController: UIViewController, UIScrollViewDelegate, UIPopo
                     siteMarked.drawAlert()
                 }
             }
+            else if (theButton == safetyCheck)
+            {
+                theKey = "safetycheck"
+            }
             else if (theButton == pulseOx)
             {
                 theKey = "pulseox"
@@ -109,7 +109,7 @@ class SSCInductionViewController: UIViewController, UIScrollViewDelegate, UIPopo
                 if (theButton.checked == true)
                 {
                     knownAllergy.drawNeutral()
-                    SSCModel.sharedInstance.setState(0, key: "knownallergy", value: 0)
+                    SSCModel.sharedInstance.setState(0, key: "allergy", value: 0)
                 }
                 else
                 {
@@ -148,7 +148,7 @@ class SSCInductionViewController: UIViewController, UIScrollViewDelegate, UIPopo
                 if (theButton.checked == true)
                 {
                     bloodLossRisk.drawNeutral()
-                    SSCModel.sharedInstance.setState(0, key: "bloodLossRisk", value: 0)
+                    SSCModel.sharedInstance.setState(0, key: "bloodlossRisk", value: 0)
                 }
                 else
                 {
@@ -170,8 +170,6 @@ class SSCInductionViewController: UIViewController, UIScrollViewDelegate, UIPopo
             }
             SSCModel.sharedInstance.setState(0, key: theKey, value: theVal)
         }
-        self.updateDisplay(sender!)
-        
     }
     
     @IBAction func HelpPressed( sender: AnyObject? ) {
@@ -230,8 +228,8 @@ class SSCInductionViewController: UIViewController, UIScrollViewDelegate, UIPopo
         
         if segue.identifier == "showHelp"
         {
-            //vc = segue.destinationViewController as! HelpViewController
-            //vc.showContent("basic")
+            var vc = segue.destinationViewController as! SSCHelpViewController
+            vc.showContent("inductionHelp")
         }
     }
     
@@ -277,29 +275,33 @@ class SSCInductionViewController: UIViewController, UIScrollViewDelegate, UIPopo
         }
         if (theArray[6] == 1)
         {
-            pulseOx.setChecked(true)
+            safetyCheck.setChecked(true)
         }
         if (theArray[7] == 1)
         {
-            knownAllergy.setChecked(true)
+            pulseOx.setChecked(true)
         }
         if (theArray[8] == 1)
         {
-            noKnownAllergy.setChecked(true)
+            knownAllergy.setChecked(true)
         }
         if (theArray[9] == 1)
         {
-            noDifficultAirwayRisk.setChecked(true)
+            noKnownAllergy.setChecked(true)
         }
         if (theArray[10] == 1)
         {
-            difficultAirwayRisk.setChecked(true)
+            noDifficultAirwayRisk.setChecked(true)
         }
         if (theArray[11] == 1)
         {
-            noBloodLossRisk.setChecked(true)
+            difficultAirwayRisk.setChecked(true)
         }
         if (theArray[12] == 1)
+        {
+            noBloodLossRisk.setChecked(true)
+        }
+        if (theArray[13] == 1)
         {
             bloodLossRisk.setChecked(true)
         }
