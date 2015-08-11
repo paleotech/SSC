@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cbu-4l-lG0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cbu-4l-lG0">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -1112,12 +1112,6 @@
                                                 <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hzj-hH-6VL">
                                                     <rect key="frame" x="53" y="39" width="135" height="12"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Risk Factors:" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q8s-vp-pDA">
-                                                    <rect key="frame" x="87" y="4" width="74" height="15"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Risk2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m7L-IX-pLQ">
                                                     <rect key="frame" x="171" y="22" width="31" height="15"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -1131,7 +1125,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Risk1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jVF-TO-SV1">
-                                                    <rect key="frame" x="171" y="4" width="31" height="15"/>
+                                                    <rect key="frame" x="171" y="0.0" width="31" height="15"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -1139,18 +1133,16 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="oiZ-NN-c0U" firstAttribute="top" secondItem="5WI-VC-RCx" secondAttribute="topMargin" constant="2" id="0mX-wP-QaM"/>
-                                                <constraint firstItem="jVF-TO-SV1" firstAttribute="leading" secondItem="q8s-vp-pDA" secondAttribute="trailing" constant="10" id="E9Y-6P-7jd"/>
-                                                <constraint firstItem="CsD-6a-0Vx" firstAttribute="top" secondItem="jVF-TO-SV1" secondAttribute="bottom" constant="21" id="FSb-oE-CUU"/>
+                                                <constraint firstItem="jVF-TO-SV1" firstAttribute="leading" secondItem="oiZ-NN-c0U" secondAttribute="trailing" constant="104" id="BFg-6P-OsA"/>
+                                                <constraint firstItem="CsD-6a-0Vx" firstAttribute="top" secondItem="jVF-TO-SV1" secondAttribute="bottom" constant="25" id="FSb-oE-CUU"/>
                                                 <constraint firstItem="CsD-6a-0Vx" firstAttribute="leading" secondItem="jVF-TO-SV1" secondAttribute="leading" id="ILn-ma-FWe"/>
-                                                <constraint firstItem="q8s-vp-pDA" firstAttribute="leading" secondItem="oiZ-NN-c0U" secondAttribute="trailing" constant="20" id="INs-MW-sx6"/>
                                                 <constraint firstItem="CsD-6a-0Vx" firstAttribute="centerX" secondItem="jVF-TO-SV1" secondAttribute="centerX" id="Laf-Ae-jcQ"/>
-                                                <constraint firstItem="m7L-IX-pLQ" firstAttribute="top" secondItem="jVF-TO-SV1" secondAttribute="bottom" constant="3" id="Mko-nv-PJR"/>
+                                                <constraint firstItem="m7L-IX-pLQ" firstAttribute="top" secondItem="jVF-TO-SV1" secondAttribute="bottom" constant="7" id="Mko-nv-PJR"/>
                                                 <constraint firstItem="m7L-IX-pLQ" firstAttribute="centerX" secondItem="jVF-TO-SV1" secondAttribute="centerX" id="SwD-7J-bAe"/>
                                                 <constraint firstItem="oiZ-NN-c0U" firstAttribute="leading" secondItem="5WI-VC-RCx" secondAttribute="leadingMargin" constant="17" id="ZYJ-pn-iXk"/>
                                                 <constraint firstItem="CsD-6a-0Vx" firstAttribute="centerX" secondItem="jVF-TO-SV1" secondAttribute="centerX" id="fLm-13-NyC"/>
+                                                <constraint firstItem="jVF-TO-SV1" firstAttribute="top" secondItem="5WI-VC-RCx" secondAttribute="topMargin" constant="-8" id="o4T-O3-BbO"/>
                                                 <constraint firstItem="m7L-IX-pLQ" firstAttribute="leading" secondItem="jVF-TO-SV1" secondAttribute="leading" id="q8X-oH-uK9"/>
-                                                <constraint firstItem="q8s-vp-pDA" firstAttribute="top" secondItem="5WI-VC-RCx" secondAttribute="topMargin" constant="-4" id="srJ-X8-0iY"/>
-                                                <constraint firstItem="jVF-TO-SV1" firstAttribute="centerY" secondItem="q8s-vp-pDA" secondAttribute="centerY" id="xOh-wp-ynv"/>
                                             </constraints>
                                             <variation key="default">
                                                 <mask key="constraints">
@@ -1164,7 +1156,6 @@
                                             <outlet property="risk1" destination="jVF-TO-SV1" id="fmN-Da-zU7"/>
                                             <outlet property="risk2" destination="m7L-IX-pLQ" id="xzc-Yg-pko"/>
                                             <outlet property="risk3" destination="CsD-6a-0Vx" id="9rg-tb-Ku7"/>
-                                            <outlet property="riskFactors" destination="q8s-vp-pDA" id="rQe-lg-hGm"/>
                                             <outlet property="theImage" destination="Hzj-hH-6VL" id="deN-cb-1Si"/>
                                             <outlet property="theLabel" destination="oiZ-NN-c0U" id="rqn-06-2il"/>
                                         </connections>

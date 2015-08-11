@@ -13,7 +13,7 @@ import UIKit
     
     @IBOutlet var theTableView: UITableView!
     
-    var items: [String] = ["Before Induction", "Before Incision", "Before Sign Out"]
+    var items: [String] = ["Before Induction", "Before Incision", "Before Sign Out", "Risk Factors"]
     var theModel = SSCModel()
     
     // MARK: view life cycle
@@ -92,6 +92,9 @@ import UIKit
             var theArray = theModel.getState(i)
             UIGraphicsBeginImageContext(imageSize);
             let theCell = cells[i] as! SSCTableViewCell
+            theCell.risk1.text = ""
+            theCell.risk2.text = ""
+            theCell.risk3.text = ""
             var theEnd = 10
             if (i == 1)
             {
@@ -122,60 +125,49 @@ import UIKit
             let theImage: UIImage = UIGraphicsGetImageFromCurrentImageContext()
             UIGraphicsEndImageContext();
             theCell.theImage.image = theImage
-            
-            // Now the risk factor text
-            if (i == 0)
+        }
+        
+        // Now the risk factor text
+        let theCell = cells[3] as! SSCTableViewCell
+        var theArray = theModel.getState(0)
+        if ( (theArray[7] == 0) && (theArray[8] == 0) && (theArray[9] == 0) )
+        {
+            theCell.risk1.text = ""
+            theCell.risk2.text = ""
+            theCell.risk3.text = ""
+        }
+        else
+        {
+            theCell.risk1.text = ""
+            theCell.risk2.text = ""
+            theCell.risk3.text = ""
+            if (theArray[7] > 1)
             {
-                var riskCount = 0
-                if ( (theArray[7] == 0) && (theArray[8] == 0) && (theArray[9] == 0) )
+                theCell.risk1.text = "Allergy"
+                if (theArray[8] > 1)
                 {
-                    theCell.riskFactors.text = ""
-                    theCell.risk1.text = ""
-                    theCell.risk2.text = ""
-                    theCell.risk3.text = ""
+                    theCell.risk2.text = "Airway"
+                    if (theArray[9] > 1)
+                    {
+                        theCell.risk3.text = "Bloodloss"
+                    }
                 }
-                else
+                else if (theArray[9] > 1)
                 {
-                    theCell.riskFactors.text = "Risk Factors: "
-                    theCell.risk1.text = ""
-                    theCell.risk2.text = ""
-                    theCell.risk3.text = ""
-                    if (theArray[7] > 1)
-                    {
-                        theCell.risk1.text = "Allergy"
-                        if (theArray[8] > 1)
-                        {
-                            theCell.risk2.text = "Airway"
-                            if (theArray[9] > 1)
-                            {
-                                theCell.risk3.text = "Bloodloss"
-                            }
-                        }
-                        else if (theArray[9] > 1)
-                        {
-                            theCell.risk2.text = "Bloodloss"
-                        }
-                    }
-                    else if (theArray[8] > 1)
-                    {
-                        theCell.risk1.text = "Airway"
-                        if (theArray[9] > 1)
-                        {
-                            theCell.risk2.text = "Bloodloss"
-                        }
-                    }
-                    else if (theArray[9] > 1)
-                    {
-                        theCell.risk1.text = "Bloodloss"
-                    }
+                    theCell.risk2.text = "Bloodloss"
                 }
             }
-            else
+            else if (theArray[8] > 1)
             {
-                theCell.riskFactors.text = ""
-                theCell.risk1.text = ""
-                theCell.risk2.text = ""
-                theCell.risk3.text = ""
+                theCell.risk1.text = "Airway"
+                if (theArray[9] > 1)
+                {
+                    theCell.risk2.text = "Bloodloss"
+                }
+            }
+            else if (theArray[9] > 1)
+            {
+                theCell.risk1.text = "Bloodloss"
             }
         }
     }
