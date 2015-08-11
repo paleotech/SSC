@@ -46,7 +46,7 @@ import UIKit
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.items.count;
     }
-    
+
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCellWithIdentifier("SSCCell", forIndexPath: indexPath) as! SSCTableViewCell
@@ -72,19 +72,18 @@ import UIKit
     }
     
     func tableView(tableView:UITableView, heightForRowAtIndexPath indexPath:NSIndexPath)->CGFloat {
-        return 54
+        return 85   
     }
     
     // MARK: tile update functions
     func displayTiles()
     {
         let cells: NSArray = theTableView.visibleCells()
-        var imageSize = CGSizeMake(360,40)
-        let tileSize = CGSizeMake(20,20)
+        var imageSize = CGSizeMake(270,60)
+        let tileSize = CGSizeMake(25,25)
         let greenImage = UIImage(named: "GreenTile") as UIImage!
         let redImage = UIImage(named: "RedTile") as UIImage!
         let yellowImage = UIImage(named: "YellowTile") as UIImage!
-        var imageRect = CGRectMake(0.0, 0.0, imageSize.width * 4.0, imageSize.height)
         UIGraphicsBeginImageContext(imageSize);
         // Loop through the three buttons
         for var i = 0; i < 3; i++
@@ -106,7 +105,7 @@ import UIKit
             }
             for var j = 0; j < theEnd; j++
             {
-                var theX = CGFloat(j) * tileSize.width
+                var theX = CGFloat(j) * CGFloat(tileSize.width + 1)
                 var thePoint: CGPoint = CGPointMake(theX, 0)
                 var modelString = theArray[j]
                 if (modelString == 1)
@@ -130,14 +129,16 @@ import UIKit
         // Now the risk factor text
         let theCell = cells[3] as! SSCTableViewCell
         var theArray = theModel.getState(0)
-        if ( (theArray[7] == 0) && (theArray[8] == 0) && (theArray[9] == 0) )
+        if ( (theArray[7] != 2) && (theArray[8] != 2) && (theArray[9] != 2) )
         {
+            theCell.theLabel.text = ""
             theCell.risk1.text = ""
             theCell.risk2.text = ""
             theCell.risk3.text = ""
         }
         else
         {
+            theCell.theLabel.text = "Risk Factors:"
             theCell.risk1.text = ""
             theCell.risk2.text = ""
             theCell.risk3.text = ""
