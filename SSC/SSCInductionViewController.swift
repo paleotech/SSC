@@ -62,6 +62,7 @@ class SSCInductionViewController: UIViewController, UIScrollViewDelegate, UIPopo
                 if (theButton.checked == true)
                 {
                     markingNotApplicable.drawNeutral()
+                    markingNotApplicable.checked = false
                     SSCModel.sharedInstance.setState(0, key: "markingNA", value: 0)
                 }
                 else
@@ -75,6 +76,7 @@ class SSCInductionViewController: UIViewController, UIScrollViewDelegate, UIPopo
                 if ((theButton.checked) == true)
                 {
                     siteMarked.drawNeutral()
+                    siteMarked.checked = false
                     SSCModel.sharedInstance.setState(0, key: "marked", value: 0)
                 }
                 else
@@ -96,6 +98,7 @@ class SSCInductionViewController: UIViewController, UIScrollViewDelegate, UIPopo
                 if (theButton.checked == true)
                 {
                     noKnownAllergy.drawNeutral()
+                    noKnownAllergy.checked = false
                     SSCModel.sharedInstance.setState(0, key: "noknownallergy", value: 0)
                 }
                 else
@@ -109,6 +112,7 @@ class SSCInductionViewController: UIViewController, UIScrollViewDelegate, UIPopo
                 if (theButton.checked == true)
                 {
                     knownAllergy.drawNeutral()
+                    knownAllergy.checked = false
                     SSCModel.sharedInstance.setState(0, key: "allergy", value: 0)
                 }
                 else
@@ -122,6 +126,7 @@ class SSCInductionViewController: UIViewController, UIScrollViewDelegate, UIPopo
                 if (theButton.checked == true)
                 {
                     difficultAirwayRisk.drawNeutral()
+                    difficultAirwayRisk.checked = false
                     SSCModel.sharedInstance.setState(0, key: "airwayRisk", value: 0)
                 }
                 else
@@ -135,6 +140,7 @@ class SSCInductionViewController: UIViewController, UIScrollViewDelegate, UIPopo
                 if (theButton.checked == true)
                 {
                     noDifficultAirwayRisk.drawNeutral()
+                    noDifficultAirwayRisk.checked = false
                     SSCModel.sharedInstance.setState(0, key: "noAirwayRisk", value: 0)
                 }
                 else
@@ -148,6 +154,7 @@ class SSCInductionViewController: UIViewController, UIScrollViewDelegate, UIPopo
                 if (theButton.checked == true)
                 {
                     bloodLossRisk.drawNeutral()
+                    bloodLossRisk.checked = false
                     SSCModel.sharedInstance.setState(0, key: "bloodlossRisk", value: 0)
                 }
                 else
@@ -161,6 +168,7 @@ class SSCInductionViewController: UIViewController, UIScrollViewDelegate, UIPopo
                 if (theButton.checked == true)
                 {
                     noBloodLossRisk.drawNeutral()
+                    noBloodLossRisk.checked = false
                     SSCModel.sharedInstance.setState(0, key: "noBloodLossRisk", value: 0)
                 }
                 else
@@ -268,10 +276,12 @@ class SSCInductionViewController: UIViewController, UIScrollViewDelegate, UIPopo
         if (theArray[4] == 1)
         {
             siteMarked.setChecked(true)
+            markingNotApplicable.drawNeutral()
         }
         if (theArray[5] == 1)
         {
             markingNotApplicable.setChecked(true)
+            siteMarked.drawNeutral()
         }
         if (theArray[6] == 1)
         {
@@ -284,26 +294,32 @@ class SSCInductionViewController: UIViewController, UIScrollViewDelegate, UIPopo
         if (theArray[8] == 1)
         {
             knownAllergy.setChecked(true)
+            noKnownAllergy.drawNeutral()
         }
         if (theArray[9] == 1)
         {
             noKnownAllergy.setChecked(true)
+            knownAllergy.drawNeutral()
         }
         if (theArray[10] == 1)
         {
             noDifficultAirwayRisk.setChecked(true)
+            difficultAirwayRisk.drawNeutral()
         }
         if (theArray[11] == 1)
         {
             difficultAirwayRisk.setChecked(true)
+            noDifficultAirwayRisk.drawNeutral()
         }
         if (theArray[12] == 1)
         {
             noBloodLossRisk.setChecked(true)
+            bloodLossRisk.drawNeutral()
         }
         if (theArray[13] == 1)
         {
             bloodLossRisk.setChecked(true)
+            noBloodLossRisk.drawNeutral()
         }
         
     }

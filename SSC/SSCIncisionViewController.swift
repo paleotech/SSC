@@ -70,6 +70,7 @@ class SSCIncisionViewController: UIViewController, UIScrollViewDelegate, UIPopov
                 if (theButton.checked == true)
                 {
                     antibioticNA.drawNeutral()
+                    antibioticNA.checked = false
                     SSCModel.sharedInstance.setState(1, key: "antibioticsNA", value: 0)
                 }
                 else
@@ -83,6 +84,7 @@ class SSCIncisionViewController: UIViewController, UIScrollViewDelegate, UIPopov
                 if (theButton.checked == true)
                 {
                     antibioticGiven.drawNeutral()
+                    antibioticGiven.checked = false
                     SSCModel.sharedInstance.setState(1, key: "antibiotics", value: 0)
                 }
                 else
@@ -96,6 +98,7 @@ class SSCIncisionViewController: UIViewController, UIScrollViewDelegate, UIPopov
                 if (theButton.checked == true)
                 {
                     imagingNA.drawNeutral()
+                    imagingNA.checked = false
                     SSCModel.sharedInstance.setState(1, key: "imagingNA", value: 0)
                 }
                 else
@@ -109,6 +112,7 @@ class SSCIncisionViewController: UIViewController, UIScrollViewDelegate, UIPopov
                 if (theButton.checked == true)
                 {
                     imagingDisplayed.drawNeutral()
+                    imagingDisplayed.checked = false
                     SSCModel.sharedInstance.setState(1, key: "imaging", value: 0)
                 }
                 else
@@ -229,18 +233,22 @@ class SSCIncisionViewController: UIViewController, UIScrollViewDelegate, UIPopov
         if (theArray[7] == 1)
         {
             antibioticGiven.setChecked(true)
+            antibioticNA.drawNeutral()
         }
         if (theArray[8] == 1)
         {
             antibioticNA.setChecked(true)
+            antibioticGiven.drawNeutral()
         }
         if (theArray[9] == 1)
         {
             imagingDisplayed.setChecked(true)
+            imagingNA.drawNeutral()
         }
         if (theArray[10] == 1)
         {
             imagingNA.setChecked(true)
+            imagingDisplayed.drawNeutral()
         }
     }
 }
