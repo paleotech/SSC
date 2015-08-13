@@ -42,5 +42,17 @@ class SSCHelpViewController: UIViewController, UIPopoverPresentationControllerDe
         {
             theTitle.text = "SSC Manual: About"
         }
+        else if (theString == "inductionHelp")
+        {
+            theTitle.text = "SSC Manual: Induction"
+        }
+        else if (theString == "incisionHelp")
+        {
+            theTitle.text = "SSC Manual: Incision"
+        }
+        else if (theString == "signOutHelp")
+        {
+            theTitle.text = "SSC Manual: Sign Out"
+        }
     }
 }
